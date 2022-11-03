@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <p class="logo">Camila González Ossa</p>            
+            </a>
+            <nav>
+                <a href="index.html#definiciones">HTML y CSS</a>
+                <a href="index.html#etiquetas">Etiquetas</a>
+                <a href="index.html#ejercicios">Ejercicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="etiquetashtmlycss">
+        <div class="container">
+            <h2>Etiquetas HTML</h2>
+            <p>
+                <font color="yellow"><b>Estructura:</b></font>
+                <br><br><font color="yellow">&lt;html&gt;&lt;/html&gt;</font>  //  Crear un documento HTML
+                <br><br><font color="yellow">&lt;head&gt;&lt;/head&gt;</font>  //  Define el encabezado, donde se pone información de configuración de la página
+                <br><br><font color="yellow">&lt;body&gt;&lt;/body&gt;</font>  //  Define la parte del contenido del documento HTML
+
+                <br><br><br><font color="aqua"><b>Header Tags:</b></font> (Etiquetas ubicadas en el <font color="yellow">&lt;head&gt;</font>)
+                <br><br><font color="aqua">&lt;title&gt;&lt;/title&gt;</font>  //  Pone el nombre del documento en la barra del título
+
+                <br><br><br><font color="red"><b>Body Tags:</b></font> (Etiquetas atributos del <font color="yellow">&lt;body&gt;</font>)
+                <br><br><font color="red">&lt;body bgcolor=?&gt;</font>  //  Cambia el color de fondo de la página, usando nombres o valores hezadecimales
+                <br><br><font color="red">&lt;body text=?&gt;</font>  //  Cambia el color del texto, usando nombres o valores hexadecimales
+                <br><br><font color="red">&lt;body link=?&gt;</font>  //  Cambia el color de los enlaces visitados
+                <br><br><font color="red">&lt;body alink=?&gt;</font>  //  Cambia el color de los enlaces al ser presionados
+
+                <br><br><br><font color="green"><b>Formato de Texto:</b></font> (Etiquetas de tipos de párrafos)
+                <br><br><font color="green">&lt;p&gt;&lt;/p&gt;</font>  //  Crea párrafos de texto
+                <br><br><font color="green">&lt;p align=?&gt;</font>  //  Alinea un párrafo (left, center, rigth)
+                <br><br><font color="green">&lt;br&gt;</font>  //  Inserta un salto de línea
+                <br><br><font color="green">&lt;blockquote&gt;&lt;/blockquote&gt;</font>  //  Justifica el texto a ambos lados
+                <br><br><font color="green">&lt;h1&gt;&lt;/h1&gt;</font>  //  Crea un título grande
+                <br><br><font color="green"> ... </font>
+                <br><br><font color="green">&lt;h6&gt;&lt;/h6&gt;</font>  //  Crea un título pequeño
+                <br><br><font color="green">&lt;div align=?&gt;&lt;/div&gt;</font>  //  Un tag genérico utilizado para formatear grandes bloques de HTML, también usado para hojas de estilo
+                <br><br><font color="green">&lt;hr&gt;</font>  //  Inserta una línea horizontal
+                <br><br><font color="green">&lt;hr size=?&gt;</font>  //  Cambia la altura de una línea
+                <br><br><font color="green">&lt;hr width&gt;</font>  //  Setea el ancho de la línea, en porcentaje o números absolutos
+                <br><br><font color="green">&lt;hr noshade&gt;</font>  //  Inserta una línea horizontal sin sombra
+                
+                <br><br><br><font color="pink"><b>Estilos de Texto:</b></font> (Etiquetas de estilos de texto)
+                <br><br><font color="pink">&lt;b&gt;&lt;/b&gt;</font> o <font color="pink">&lt;strong&gt;&lt;/strong&gt;</font>  //  Crea texto en negritas
+                <br><br><font color="pink">&lt;i&gt;&lt;/i&gt;</font> o <font color="pink">&lt;em&gt;&lt;/em&gt;</font>  //  Crea texto en itálicas
+                <br><br><font color="pink">&lt;cite&gt;&lt;/cite&gt;</font>  //  Crea una cita, usando itálicas
+                <br><br><font color="pink">&lt;font size=?&gt;&lt;/font&gt;</font>  //  Cambia el cuerpo de la fuente de 1 a 7
+                <br><br><font color="pink">&lt;font color=?&gt;&lt;/font&gt;</font>  //  Setea el color de la fuente, usando nombres o valores hexadecimales
+
+                <br><br><br><font color="purple"><b>Enlaces:</b></font> (Etiquetas de enlaces - vínculos)
+                <br><br><font color="purple">&lt;a href="URL"&gt;&lt;/a&gt;</font>  //  Crea un hipervínculo
+                <br><br><font color="purple">&lt;a href="mailto:EMAIL"&gt;&lt;/a&gt;</font>  //  Crea un enlace de EMAIL
+                <br><br><font color="purple">&lt;a href="NAME"&gt;&lt;/a&gt;</font>  //  Crea un enlace dentro del documento
+                <br><br><font color="purple">&lt;a href="#NAME"&gt;&lt;/a&gt;</font>  //  Vincula a ese target dentro del documento
+
+                <br><br><br><font color="orange"><b>Listas</b></font>
+                <br><font color="orange"><b>de Definición:</b></font>
+                <br><br><font color="orange">&lt;dl&gt;&lt;/dl&gt;</font>  //  Crea una lista de Definición
+                <br><br><font color="orange">&lt;dt&gt;</font>  //  Precede cada término de Definición
+                <br><br><font color="orange">&lt;dd&gt;</font>  //  Precede cada Definición
+                <br><br><br><font color="orange"><b>Listas</b></font>
+                <br><font color="orange"><b>ordenadas:</b></font>
+                <br><br><font color="orange">&lt;ol&gt;&lt;/ol&gt;</font>  //  Crea una lista numerada
+                <br><br><font color="orange">&lt;li&gt;&lt;/li&gt;</font>  //  Precede cada item de una lista y le agrega un número
+                <br><br><br><font color="orange"><b>Listas</b></font>
+                <br><font color="orange"><b>desordenadas:</b></font>
+                <br><br><font color="orange">&lt;ul&gt;&lt;/ul&gt;</font>  //  Crea una lista con puntos
+                <br><br><font color="orange">&lt;li&gt;&lt;/li&gt;</font>  //  Precede cada item de una lista y le agrega un número
+
+                <br><br><br><font color="blue"><b>Elementos Gráficos:</b></font>
+                <br><br><font color="blue">&lt;img src="URL"&gt;</font>  //  Agrega una imágen
+                <br><br><font color="blue">&lt;img src="URL" align=?&gt;</font>  //  Alinea una imágen
+                <br><br><font color="blue">&lt;img src="URL" border=?&gt;</font>  //  Setea el grosor del borde de la imágen
+
+                <br><br><br><font color="lightgreen"><b>Tablas:</b></font>
+                <br><br><font color="lightgreen">&lt;table&gt;&lt;/table&gt;</font>  //  Crea una tabla
+                <br><br><font color="lightgreen">&lt;tr&gt;&lt;/tr&gt;</font>  //  Crea cada row de la tabla
+                <br><br><font color="lightgreen">&lt;td&gt;&lt;/td&gt;</font>  //  Cambia cada celda de la tabla
+                <br><br><font color="lightgreen">&lt;th&gt;&lt;/th&gt;</font>  //  Setea el header de la tabla (una celda normal, con texto centrado y resaltado)
+                <br><br><font color="lightgreen">&lt;table border=#&gt;</font>  //  Cambia el grosor del borde de la tabla
+                <br><br><font color="lightgreen">&lt;table cellspacing=#&gt;</font>  //  Setea la cantidad de espacio entre las celdas
+                <br><br><font color="lightgreen">&lt;table cellpadding=#&gt;</font>  //  Setea la cantidad de espacio entre el borde de las celdas y su contenido
+                <br><br><font color="lightgreen">&lt;table width=#&gt; o &lt;table width=%</font>  //  Setea el ancho de la tabla - en pixel o en porcentaje de acuerdo al ancho del documento
+                <br><br><font color="lightgreen">&lt;tr align=?&gt; o &lt;td align=?</font>  //  Setea la alineación de las celdas (izquierda, centro, derecha)
+                <br><br><font color="lightgreen">&lt;tr valign=?&gt; o &lt;td valign=?</font>  //  Setea la alineación vertical de las celdas (arriba, medio, abajo)
+                <br><br><font color="lightgreen">&lt;td colspan=#&gt;</font>  //  Setea la cantidad de columnas dentro de una celda
+                <br><br><font color="lightgreen">&lt;td rowspan=#&gt;</font>  //  Setea la cantidad de rows que una celda despliega (por defecto=1)
+                <br><br><font color="lightgreen">&lt;td nowrap&gt;</font>  //  Previene que se rompa una línea dentro de la celda
+
+                <br><br><br><font color="brown"><b>Frames:</b></font>
+                <br><br><font color="brown">&lt;frameset&gt;&lt;/frameset&gt;</font>  //  Tag dentro de un documento de frames
+                <br><br><font color="brown">&lt;frameset rows="value,value"&gt;</font>  //  Define las filas de un frame, usando números o porcentaje para definir el largo
+                <br><br><font color="brown">&lt;frameset cols="value,value"&gt;</font>  //  Define las columnas de un frame, usando números o porcentaje para definir el largo
+                <br><br><font color="brown">&lt;frame&gt;</font>  //  Define un solo fram - o región - dentro de frameset
+                <br><br><font color="brown">&lt;noframes&gt;&lt;/noframes&gt;</font>  //  Define lo que aparecerá en navegadores que no soporten frames
+                <br><br><font color="brown">&lt;frame src="URL"&gt;</font>  //  Especifica que documento html será desplegado
+                <br><br><font color="brown">&lt;frame name="name"&gt;</font>  //  Nombra el frame o región, para que pueda ser llamado desde otro frame
+                <br><br><font color="brown">&lt;frame marginwidth=#&gt;</font>  //  Define los márgenes derecho e izquierdo del frame; debe ser igual o mayor a 1
+                <br><br><font color="brown">&lt;frame marginheight=#&gt;</font>  //  Define los márgenes de arriba y abajo del frame; debe ser igual o mayor a 1
+                <br><br><font color="brown">&lt;frame scrolling=VALUE&gt;</font>  //  Setea si el frame tendrá barra de desplazamiento o no; el valor debe ser "yes", "no", o "auto". El default es "auto"
+                <br><br><font color="brown">&lt;frame noresize&gt;</font>  //  Previene al usuario de cambiar el tamaño del frame
+
+                <br><br><br><font color="blueviolet"><b>Formularios:</b></font>
+                <br>Para formularios funcionales, deberá correr un script de CGI. El HTML sólo crea la apariencia del formulario
+                <br><br><font color="blueviolet">&lt;form&gt;&lt;/form&gt;</font>  //  Crea el formulario
+                <br><br><font color="blueviolet">&lt;select multiple name="NAME" size=?&gt;&lt;/select&gt;</font>  //  Crea un menú de desplazamiento. Size setea el número de items visibles antes de tener que desplazarse
+                <br><br><font color="blueviolet">&lt;option&gt;</font>  //  Setea cada item del menú
+                <br><br><font color="blueviolet">&lt;select name="NAME"&gt;&lt;/select&gt;</font> //  Crea un menú desplegable
+                <br><br><font color="blueviolet">&lt;textarea name="NAME" cols=40 rows=8&gt;&lt;/textarea&gt;</font>  //  Crea un área de texto
+                <br><br><font color="blueviolet">&lt;input type="checkbox" name="NAME"&gt;</font>  //  Crea una checkbox
+                <br><br><font color="blueviolet">&lt;input type="radio" name="NAME" value="x"&gt;</font>  //  Crea un radio button
+                <br><br><font color="blueviolet">&lt;input type=text name="foo" size=20&gt;</font>  //  Crea un área de texto de una sola línea. Size setea el largo en caracteres
+                <br><br><font color="blueviolet">&lt;input type="submit" value="NAME"&gt;</font>  //  Crea un botón de envío
+                <br><br><font color="blueviolet">&lt;input type="image" border=0 name="NAME" scr="name.gif"&gt;</font>  //  Crear un botón de envio utilizando una imagen
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="index.html">
+                <button>Volver</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Bitácora Personal 2022, Camila González Ossa</p>
+        </div>
+    </footer> 
+</body>
+</html>

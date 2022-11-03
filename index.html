@@ -4,35 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora de Camila González Ossa</title>
+    <title>Bitácora</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Clase 19 de Agosto</h1>
-      <div>Se enseñan los elementos de un código, es decir, la estructura de un elemento html,</div>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <p class="logo">Camila González Ossa</p>            
+            </a>
+            <nav>
+                <a href="#definiciones">HTML y CSS</a>
+                <a href="#etiquetas">Etiquetas</a>
+                <a href="#ejercicios">Ejercicios</a>
+            </nav>
+        </div>
+    </header>
 
-      <div><strong>por ejemplo:</strong></div>
-      <div><strong>&lt;address&gt;</strong> Matta 12, Viña del Mar <strong>&lt;/address&gt;</strong></div>
-    
-      <img src=imagenes/picasso.png alt="Obra Maestra" width:50px class="basic-imagen"/>
-      <div>&lt;<img src=imagenes/picasso.png alt="Obra Maestra" width:50px class="basic-imagen"/>&gt;</div>
-      <div>Se creó un estilo de clase dentro del atributo de imágen para poder llamarlo en el
-      <div>código de styles que utilizaremos en la próxima clase.</div>
-      https://www.w3schools.com/html/html_xhtml.asp
+    <section id="hero">
+        <h1>Aprendizaje en Curso <br>HTML y CSS</h1>
+            </section>
 
-     <h3> Algunos códigos</h3>
-      <div><strong>&lt;span&gt;</strong>Elemento de Línea: ocupa el ancho completo de la pantalla<strong>&lt;/span&gt;</strong></div>
-      <div><strong>&lt;div&gt;</strong>Elemento de Bloque: ocupa el ancho del texto<strong>&lt;/div&gt;</strong></div> 
+    <section id="definiciones">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
 
-    <h1>Clase 26 de Agosto</h1>
-      <div>Se enseña nuevamente a vincular los archivos de VisualCode con GitHub</div>
-      <div>Luego se entra en el diseño de la escritura, estilos tipográficos, fuentes, etc.</div>
-      <div>Se utiliza el estilo de clase creado en la imagen de la clase anterior</div>
+                <h2>¿Qué es un <span class="color-acento">HTML</span>?</h2>
+                <p>
+                    HTML es un markup language, lo que significa que está escrito con 
+                    códigos que puede leer una persona sin que sea necesario compilarlo 
+                    primero. En otras palabras, es un lenguaje de marcado que define 
+                    la estructura de tu contenido. 
+                    <br><br><br> Las etiquetas de encierre pueden hacer 
+                    de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar 
+                    palabras a cursiva, agrandar o achicar la letra, etc. El texto en una página 
+                    web está «marcado» con estos códigos para dar instrucciones al navegador web sobre cómo 
+                    mostrar el texto. Estas <b>etiquetas de marcado</b> son las propias etiquetas HTML.
+                   <br><br><br> Cuando escribes código en HTML, estás escribiendo <b>etiquetas HTML</b>. Todas las 
+                   etiquetas HTML están hechas con un número de partes específicas, incluyendo:
+                   <br><br>• El <b>carácter</b> "menor que" <b>&lt;</b>
+                   <br><br>• Una palabra o carácter que determina qué etiqueta se está escribiendo
+                   <br><br>• Cualquier <b>número de atributos</b> HTML que se quiera usar, escritos 
+                   de la forma nombre="valor"
+                   <br><br>• El carácter "mayor que" <b>&gt;</b>
+                </p>
+                <br><br><br>
+                <h2>¿Y sobre <span class="color-acento">CSS</span>?</h2>
+                <p>Como HTML, CSS (Cascading Style Sheets) u Hojas de estilo en cascada 
+                    en español, no es realmente un lenguaje de programación, tampoco es 
+                    un lenguaje de marcado. Es un lenguaje de hojas de estilo, es decir, te 
+                    permite aplicar estilos de manera selectiva a elementos en documentos HTML. 
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <h1>Clase 09 de Septiembre</h1>
-    <h2>Diagramación</h2>
-      <h3>Ejercicio en Clases</h3>
-      <div>Grillas (wsp pauli)</div>
+    <section id="etiquetas">
+        <div class="container">
+            <h2>Etiquetas</h2>
+            <div class="tipohtmlocss">
+                <div class="carta">
+                    <h3>Etiquetas básicas HTML</h3>
+                    <p>Listado de algunas etiquetas HTML aprendidas y estudiadas tanto en clases como personalmente</p>
+                    <form action="etiquetashtml.html">
+                        <button>Mostrar</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Propiedades básicas CSS</h3>
+                    <p>Listado de algunas propiedades CSS aprendidas y estudiadas tanto en clases como personalmente</p>
+                    <form action="etiquetascss.html">
+                        <button>Mostrar</button>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </section>
 
-    
+    <section id="ejercicios">
+        <div class="container">
+            <h2>Ejercicios de la Clase</h2>
+            <form action="ejercicios.html">
+                <button>Ver Ejercicios</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Bitácora Personal 2022, Camila González Ossa</p>
+        </div>
+    </footer>    
 </body>
 </html>

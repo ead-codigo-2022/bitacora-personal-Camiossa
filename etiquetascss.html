@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <p class="logo">Camila González Ossa</p>            
+            </a>
+            <nav>
+                <a href="index.html#definiciones">HTML y CSS</a>
+                <a href="index.html#etiquetas">Etiquetas</a>
+                <a href="index.html#ejercicios">Ejercicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="etiquetashtmlycss">
+        <div class="container">
+            <h2>Propiedades CSS</h2>
+            <p>
+                <font color="yellow"><b>Selectores Básicos:</b></font>
+                <br><br><font color="yellow">*</font>  //  Selecciona todos los elementos del DOM
+                <br><br><font color="yellow">etiqueta</font>  //  Selecciona todas las etiquetas indicadas
+                <br><br><font color="yellow">.class</font>  //  Selección de los elementos con la clase .class
+                <br><br><font color="yellow">#id</font>  //  Selección del elemento con id #id
+                <br><br><font color="yellow">sel1 sel2</font>  //  Selección de los selectores sel2 que se encuentren dentro de los selectores sel1
+                <br><br><font color="yellow">.class1.class2</font>  //  Selección de los elementos con las dos clases: class1 y class2
+                <br><br><font color="yellow">sel1.class1</font>  //  Selección de todos los selectores sel1 con clase class1
+                <br><br><font color="yellow">sel1,sel2</font>  //  Selección de todos los selectores separados por comas  
+                <br><br><font color="yellow">sel1 &gt; sel2</font>  //  Selección de los selectores sel2 cuando son hijos de sel1
+                <br><br><font color="yellow">sel1 + sel2</font>  //  Selección del selector sel2 cuando es hermano de sel1 (su elemento padre es el mismo)
+                
+                <br><br><br><font color="blueviolet"><b>Unidades de Medida</b><br>Longitudes Relativas:</font>
+                <br><br><font color="blueviolet">px</font>  //  Píxeles (relativo al dispositivo)
+                <br><br><font color="blueviolet">em</font>  //  Relativo al tamaño de la fuente del elemento (2em = 2 veces el tamaño de la fuente actual)
+                <br><br><font color="blueviolet">%</font>  //  Porcentaje (relativo al elemento padre)
+                <br><br><font color="blueviolet">vh y vw</font>  //  Medidas relativas de acuerdo al viewport (1vh = 1% de la altura del viewport - 100vh = altura del viewport)
+                <br><br><br><font color="blueviolet">Longitudes Absolutas:</font>
+                <br><br><font color="blueviolet">in</font>  //  Pulgadas (1pulgada = 2.54cm)
+                <br><br><font color="blueviolet">cm</font>  // Centímetros
+                <br><br><font color="blueviolet">mm</font>  //  Milímetros
+                <br><br><font color="blueviolet">pt</font>  //  Puntos (1pt = 1/72pulgadas)
+                <br><br><font color="blueviolet">pc</font>  //  Picas (1pica = 12puntos)
+
+                <br><br><br><font color="orange"><b>Colores Básicos:</b></font>
+                <br><br><font color="black">Nombre: black ; HEX: #000000 ; RGB: 0,0,0</font>
+                <br><br><font color="white">Nombre: white ; HEX: #ffffff ; RGB: 255,255,255</font>
+                <br><br><font color="red">Nombre: red ; HEX: #ff0000 ; RGB: 255,0,0</font>
+                <br><br><font color="blue">Nombre: blue ; HEX: #0000ff ; RGB: 0,0,255</font>
+                <br><br><font color="yellow">Nombre: yellow ; HEX: #ffff00 ; RGB: 255,255,0</font>
+                <br><br><font color="gray">Nombre: gray ; HEX: #808080 ; RGB: 128,128,128</font>
+                <br><br><font color="green">Nombre: green ; HEX: #008000 ; RGB: 0,128,0</font>
+
+                <br><br><br><font color="lightgreen"><b>Color y Fondo:</b></font>
+                <br><br><font color="lightgreen">color</font>  //  Color del texto (RGB | HSL | HEX | nombre del color | RGBA | HSLA)
+                <br><br><font color="lightgreen">background-color</font>  //  Color de fondo (RGB | HSL | HEX | nombre del color | RGBA | HSLA)
+                <br><br><font color="lightgreen">background-image</font>  //  Imagen de fonto (url(...) | none)
+                <br><br><font color="lightgreen">background-repeat</font>  // Repetición de la imagen de fondo (repeat | repeat-x | repeat-y | no-repeat)
+                <br><br><font color="lightgreen">background-attachment</font>  //  Desplazamiento de la imagen de fondo (scroll | fixed)
+                <br><br><font color="lightgreen">background-position</font>  //  Posición de la imagen de fondo (percentage | length | left | center | right)
+                <br><br><font color="lightgreen">background-size</font>  //  Tamaño de la imágen de fondo (valor)
+                <br><br><font color="lightgreen">opacity</font>  //  Transparencia de un elemento (0 - 1) (o es totalmente transparente)
+
+                <br><br><br><font color="pink"><b>Texto:</b></font>
+                <br><br><font color="pink">text-indent</font>  //  Desplazamiento de la primera línea del texto (longitud | porcentaje)
+                <br><br><font color="pink">text-align</font>  //  Alineamiento del texto (left | right | center | justify)
+                <br><br><font color="pink">text-decoration</font>  //  Efectos de subrayado y tachado (none | underline | overline | line-through)
+                <br><br><font color="pink">letter-spacing</font>  //  Espacio entre caracteres (normal | longitud)
+                <br><br><font color="pink">word-spacing</font>  //  Espacio entre palabras (normal | longitud)
+                <br><br><font color="pink">text-transform</font>  //  Transformación a mayúsculas / minúsculas (capitalize | uppercase | lowercase | none)
+                <br><br><font color="pink">line-height</font>  //  Tamaño del espacio entre líneas (longitud | porcentaje)
+                <br><br><font color="pink">vertical-align</font>  //  Alineación vertical (top | middle | bottom | baseline | sub | super | valor)
+                
+                <br><br><br><font color="aqua"><b>Fuentes:</b></font>
+                <br><br><font color="aqua">font-family</font> // Familias de fuentes (nombre-familia | nombre-familia-genérica)
+                <br><br><font color="aqua">font-style</font>  //  Estilo de la fuente (normal | italic | oblique)
+                <br><br><font color="aqua">font-variant</font>  //  Convierte a mayúsculas manteniendo un tamaño inferior (normal | small-caps)
+                <br><br><font color="aqua">font-weight</font>  //  Anchura de los caracteres (normal | bold | bolder | lighter | 100 | 200 | 900)
+                <br><br><font color="aqua">font-size</font>  //  Tamaño de la fuente (xx-small | small | medium | large | x-large | xx-large | larger | smaller | longitud | porcentaje)
+
+                <br><br><br><font color="red"><b>Listas:</b></font>
+                <br><br><font color="red">list-style-type</font>  //  Estilo aplicable a los marcadores visuales de las listas (disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none)
+                <br><br><font color="red">list-style-image</font>  // Imagen aplicable a los elementos de las listas (url(...) | none)
+                <br><br><font color="red">list-style-position</font>  //  Posición dentro de la lista de los elementos marcadores de las listas (inside | outside)
+                <br><br><font color="red">list-style</font>  //  Permite establecer el estilo de la lista, la imagen y/o la posición (list-style-type | list-style-position | list-style-image)  
+                
+                <br><br><br><font color="green"><b>Tablas:</b></font>
+                <br><br><font color="green">caption-side</font>  //  Posición del título respecto a la tabla (top | bottom)
+                <br><br><font color="green">table-layout</font>  //  Formato de las celdas, filas y columnas (auto | fixed)
+                <br><br><font color="green">border-collapse</font>  //  Selección del modelo de los bordes (collapse | separate)
+                <br><br><font color="green">border-spacing</font>  //  Espaciado entre los bordes de celdas adyacentes (longitud)
+                <br><br><font color="green">empty-cells</font>  //  Visibilidad de los bordes de celdas sin contenido (show | hide)
+
+                <br><br><br><font color="blue"><b>Pseudo-Clases (para selección de hijos o hermanos):</b></font>
+                <br><br><font color="blue">:first-child</font>  //  Primer hijo
+                <br><br><font color="blue">:last-child</font>  //  	Último hijo
+                <br><br><font color="blue">:first-of-type</font>  //  Primer hermano de su tipo
+                <br><br><font color="blue">:last-of-type</font>  //	 Último hermano de su tipo
+                <br><br><font color="blue">:only-child</font>  //	Hijos únicos
+                <br><br><font color="blue">:only-of-type</font>  //	 Únicos hermanos de su tipo
+                <br><br><font color="blue">:empty</font>  //  Elementos que no tienen hijos
+                <br><br><font color="blue">:nth-child(n)</font>  //  Enésimo elemento hijo
+                <br><br><font color="blue">:nth-last-child(n)</font>  //  Enésimo elemento hijo contando desde el último
+                <br><br><font color="blue">:nth-of-type(n)</font>  //	Enésimo hermano de su tipo
+                <br><br><font color="blue">:nth-last-of-type(n)</font>  //  Enésimo hermano de su tipo comenzando desde el último
+            
+                <br><br><br><font color="yellow"><b>Pseudo-Clases (para los estados de un elemento):</b></font>
+                <br><br><font color="yellow">:link</font>  //  No visitado por el usuario
+                <br><br><font color="yellow">:visited</font>  //  Visitado por el usuario
+                <br><br><font color="yellow">:hover</font>  //  Modifica el estilo cuando un elemento apuntador pasa por encima
+                <br><br><font color="yellow">:active</font>  //  Se activa cuando el usuario pulsa el elemento
+                <br><br><font color="yellow">:focus</font>  //  Se activa cuando tiene el foco sobre el elemento
+
+                <br><br><br><font color="blueviolet"><b>Pseudo-Elementos:</b></font>
+                <br><br><font color="blueviolet">::first-line</font>  //  Primera línea de texto de un elemento
+                <br><br><font color="blueviolet">::first-letter</font>  //  Primera letra de la primera línea de texto de un elemento
+                <br><br><font color="blueviolet">::before</font>  //  Añade contenido al principio del documento
+                <br><br><font color="blueviolet">::after</font>  //  Añade contenido al final del documento
+
+                <br><br><br><font color="orange"><b>Modelo de Cajas (márgenes, relleno, bordes):</b></font>
+                <br><br><font color="orange">padding-top | padding-right | padding-bottom | padding-left</font>  //  Tamaño del relleno superior, derecho, inferior e izquierdo (longitud | porcentaje)
+                <br><br><font color="orange">padding</font>  //  Tamaño de relleno (longitud | porcentaje {1,4})
+                <br><br><font color="orange">margin-top | margin-right | margin-bottom | margin-left</font>  //  Tamaño del margen superior, derecho, inferior e izquierdo (longitud | porcentaje | auto)
+                <br><br><font color="orange">margin</font>  //  Ancho de los márgenes (longitud | porcentaje | auto {1,4})
+                <br><br><font color="orange">border-top-width | border-right-width | border-bottom-width | border-left-width</font>  //  Anchura del borde superior, derecho, inferior o izquierdo (thin | medium | thick | longitud)
+                <br><br><font color="orange">border-width</font> //  Anchura del borde (reducida) (thin | medium | thick | longitud {1,4})
+                <br><br><font color="orange">border-top-color | border-right-color | border-bottom-color | border-left-color</font>  //  Color del borde superior, derecho, inferior e izquierdo (color | transparent)
+                <br><br><font color="orange">border-color</font>  //  Color del borde (reducida) (color | transparent {1,4})
+                <br><br><font color="orange">border-top-style | border-right-style | border-bottom-style | border-left-style</font>  //  Estilo del borde superior, derecho, inferior e izquierdo (none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset)
+                <br><br><font color="orange">border-style</font> //  Estilo del borde (reducida)	(none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset {1,4})
+                <br><br><font color="orange">border-top | border-right | border-bottom | border-left</font>  //  Ancho, estilo y color para el borde superior, derecho, inferior e izquierdo	(border-top-width | border-top-style | border-top-color)
+                <br><br><font color="orange">border</font>  //  Ancho, estilo y color para los bordes (reducida) (border-width | border-style | border-color)
+                <br><br><font color="orange">border-radius</font>  //  Curvatura del borde	(longitud | porcentaje {1,4})
+
+                <br><br><br><font color="lightgreen"><b>Comportamiento de Contenedores:</b></font>
+                <br><br><font color="lightgreen">display</font>  //  Comportamiento del contenedor (inline | block | inline-block | none)
+                <br><br><font color="lightgreen">position</font>  //  Esquema de posicionamiento (static | relative | absolute | fixed)
+                <br><br><font color="lightgreen">top | right | bottom | left</font>  //  Desplazamiento de la caja respecto al borde superior, derecho, inferior o izquierdo (longitud | porcentaje | auto)
+                <br><br><font color="lightgreen">float</font>  //  Posicionamiento flotante (left | right | none)
+                <br><br><font color="lightgreen">clear</font>  //  Control de cajas adyacentes a las float (none | left | right | both)
+                <br><br><font color="lightgreen">z-index</font>  //  Nivel de la capa (auto | número entero)
+                <br><br><font color="lightgreen">box-sizing</font>  //  Control de bordes y relleno en el comportamiento del contenedor (content-box | border-box)
+                <br><br><font color="lightgreen">visibility</font>  //  Muestra u oculta un elemento ocupando el espacio (visible | hidden)
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="index.html">
+                <button>Volver</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; Bitácora Personal 2022, Camila González Ossa</p>
+        </div>
+    </footer> 
+</body>
+</html>
